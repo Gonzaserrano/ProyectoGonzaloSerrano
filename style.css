@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    background-color: #C2C5AA;
+}
+header{
+    background-color: #A4AC86;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo img{
+    height: 100px;
+}
+.iconos img{
+    width: 40px;
+    margin: 10px;
+}
+.navegacion{
+    background-color: #A68A64;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+}
+.navegacion li a{
+    display: block;
+    font-size: 25px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+.navegacion li:hover{
+    background-color: gray;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.navegacion li:hover .menu-vertical{
+    display: block;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.categorias :hover{
+    transform: scale(1.1);
+}
+.categorias h1{
+    font-size: 25px;
+}
+.card_categorias{
+    display: flex;
+    width: 20%;
+    border: black solid 1px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    align-items:center ;
+    margin: 10px;
+    justify-content: flex-end;
+
+}
+.card_categorias img{
+    width: 60%;
+}
+.productos_destacados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card_productos_destacados{
+    display: flex;
+    width: 20%;
+    border: black solid 1px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    align-items:center ;
+    margin: 10px;
+    justify-content: flex-end;
+
+}
+.card_productos_destacados img{
+    width: 70%;
+}
+.Informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.InformacionGeneral{
+    border: black solid 1px;
+    width: 50%;
+}
+.InformacionGeneral h2{
+    display: flex;
+    justify-content: center;
+}
+.icono_medios img{
+    width: 30px;
+}
+
+.icono_medios{
+    display: flex;
+    justify-content: center;
+}
+.quienes_somos{
+    flex-direction: column;
+    width: 50%;
+    border: black solid 1px;
+}
+
+
+
+@media (max-width: 600px){
+    .categorias h1{
+        font-size: 12px;
+    }
+}
