@@ -1,6 +1,6 @@
 body{
-    margin: 0;
     background-color: #C2C5AA;
+    margin: 0;
 }
 header{
     background-color: #A4AC86;
@@ -9,6 +9,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+main{
+    background-color: #C2C5AA;
+}
+
 .logo{
     display: flex;
     flex-direction: row;
@@ -20,22 +24,25 @@ header{
     width: 40px;
     margin: 10px;
 }
-.navegacion{
+
+nav{
     background-color: #A68A64;
-    display: block;
-    list-style-type: none;
+    font-size: 10px;
+}
+.navegacion{
+    list-style: none;
+    display: flex;
     margin: 0;
+    padding: 0;
 }
-.navegacion li a{
+.navegacion > li > a{
     display: block;
-    font-size: 25px;
-    margin: 20px;
+    padding: 15px 20px;
+    color: white;
     text-decoration: none;
-    color: black;
-    
 }
-.navegacion li:hover{
-    background-color: gray;
+.navegacion > li:hover{
+    background-color: red;
 }
 .menu-vertical{
     position: absolute;
@@ -43,17 +50,35 @@ header{
     list-style: none;
     width: 200px;
     background-color: rgba(0, 0, 0, .5);
+    padding: 0;
+    z-index: 2;
 }
 .navegacion li:hover .menu-vertical{
     display: block;
 }
+.menu-vertical li:hover{
+    background-color: red;
+
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.subtitulo{
+    background-color: #C2C5AA;
+    margin: 0;
+}
 .categorias{
+    background-color: #C2C5AA;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 .categorias :hover{
-    transform: scale(1.1);
+   transform: scale(1.1);
 }
 .categorias h1{
     font-size: 25px;
@@ -68,16 +93,19 @@ header{
     align-items:center ;
     margin: 10px;
     justify-content: flex-end;
-
+}
+.card_categorias :hover{
+    transform:none;
 }
 .card_categorias img{
     width: 60%;
 }
+
 .productos_destacados{
+    background-color: #C2C5AA;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .card_productos_destacados{
     display: flex;
@@ -87,12 +115,16 @@ header{
     background-color: white;
     border-radius: 30px;
     align-items:center ;
+    text-align: center;
     margin: 10px;
     justify-content: flex-end;
 
 }
 .card_productos_destacados img{
-    width: 70%;
+    width: 60%;
+}
+.card_productos_destacados h2{
+    margin: 10px 0;
 }
 .Informacion{
     display: flex;
@@ -120,6 +152,7 @@ header{
     width: 50%;
     border: black solid 1px;
 }
+
 
 
 
