@@ -18,7 +18,31 @@ main{
     flex-direction: row;
 }
 .logo img{
-    height: 100px;
+    height: 80px;
+}
+.busqueda{
+    margin: 0;
+}
+.busqueda input{
+    margin: 0;
+    border-radius: 30px;
+}
+.busqueda button{
+    position: relative;
+    margin: 0;
+    right: 40px;
+    background: none;
+    border: none;
+    border-radius: 30%;
+
+}
+.busqueda img{
+    position: relative;
+    width: 20px;
+    margin-bottom: 10%;
+}
+.iconos{
+    display: flex;
 }
 .iconos img{
     width: 40px;
@@ -132,12 +156,15 @@ nav{
     justify-content:space-around;
 }
 .InformacionGeneral{
+    display: flex;
+    align-content: center;
     border: black solid 1px;
     width: 50%;
 }
 .InformacionGeneral h2{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .icono_medios img{
     width: 30px;
@@ -148,16 +175,151 @@ nav{
     justify-content: center;
 }
 .quienes_somos{
-    flex-direction: column;
+    display: flex;
     width: 50%;
     border: black solid 1px;
 }
 
+.quienes_somos p{
+    margin: 10px;
+
+}
+
+.quienes_somos h2{
+    margin: 10px;
+}
+
+
+.carrito-icono {
+    position: relative;
+}
+
+.carrito-desplegable {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 5px;
+    background-color: #fff;
+    border: 3px solid #A4AC86;
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 100;
+}
+
+.carrito-icono:hover .carrito-desplegable {
+    display: block;
+}
+
+
+
+.productos{
+    padding: 20px;
+}
+
+.tituloProducto{
+    text-align: center;
+}
+
+.card_productos{
+    width: 200px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_productos h2{
+    font-size: 20px;
+}
+
+.card_productos img{
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between;
+  }
+  
+  
+
+.card {
+    width: calc(33.33% - 20px); 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .card a:hover {
+    color: #ff6600;
+  }
 
 
 
 @media (max-width: 600px){
+    .logo img{
+        height: 80px;
+    }
+    .busqueda input{
+        width: 0;
+        padding: 0;
+        border: none;
+        opacity: 0;
+    }
+    .busqueda button{
+        border: none;
+    }
+    .busqueda img{
+        width: 40px;
+    }
+    .iconos img{
+        width: 40px;
+    }
     .categorias h1{
         font-size: 12px;
     }
 }
+
